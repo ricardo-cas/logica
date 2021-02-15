@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quarta aula | Aula de Lógica</title>
+  </head>
+  <body>
+    <script>
+      // Para não precisar atualizar sempre o ano, podemos utilizar uma variável para receber essa informação
+      // Tornando assim a manutenção do código mais fácil e rápida
+      // para declararmos uma variável podemos utilizar o comando 'var'
+      // podemos utilizar o comando 'var' recebendo o ano atual, porém todo ano deveríamos atualizar este código manualmente.
+      // var ano = 2021;
+      // Podemos a variável "automática" utilizando a função Date e pedindo para que ela retorne somente o ano da Data atual.
+      // e assim atribuir esse ano para a variável ano.
+      var ano = new Date().getFullYear();
+      // Para ver a data atual e ano:
+      //   let data_atual = new Date();
+      //   console.log(data_atual);
+      //   console.log(ano);
+      document.write("Flávio tem " + (ano - 1977) + "<br>");
+      document.write("Joaquim tem " + (ano - 1996) + "<br>");
+      document.write("João " + (ano - 1976) + "<br>");
+    </script>
+  </body>
+</html>
